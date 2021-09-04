@@ -15,10 +15,7 @@ namespace IndianStateCensusProblem
                 FILE_NOT_FOUND, INVALID_FILE_TYPE, INVALID_HEADER, INVALID_DELIMITER, NO_SUCH_COUNTRY
             }
             public ExceptionType eType;
-            public CensusAnalyzerException(string message, ExceptionType exceptionType) : base(message)
-            {
-                this.eType = exceptionType;
-            }
+            public CensusAnalyzerException(string message, ExceptionType exceptionType) : base(message) => this.eType = exceptionType;
         }
     }
 }
